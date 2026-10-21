@@ -1,0 +1,31 @@
+# Environment files and local secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Go build artifacts
+/chat-backend/tmp/
+/chat-backend/bin/
+*.exe
+*.test
+*.out
+
+# Node/Vite generated files
+**/node_modules/
+/web/.pnpm-store/
+/web/dist/
+/web/dist-ssr/
+/web/coverage/
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Local editor and OS files
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json

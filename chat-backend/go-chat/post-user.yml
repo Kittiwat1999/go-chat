@@ -1,0 +1,23 @@
+info:
+  name: post-user
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8080/api/users/kittiwat1999
+  params:
+    - name: username
+      value: ""
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: '{"username": "kittiwat1999", "password":"123456", "displayName":"toon hee"}'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
